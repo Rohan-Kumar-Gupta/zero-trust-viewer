@@ -15,19 +15,9 @@ import {
 import { useEffect, useState } from "react";
 import { eventsData } from "../data/event";
 import Loader from "../components/Loader";
+import { getStatusColor } from "../utils/utils";
 
-const getStatusColor = (status: string) => {
-  switch (status.toLowerCase()) {
-    case "success":
-      return "success";
-    case "warning":
-      return "warning";
-    case "critical":
-      return "error";
-    default:
-      return "default";
-  }
-};
+
 
 const Events = () => {
   const [search, setSearch] = useState("");

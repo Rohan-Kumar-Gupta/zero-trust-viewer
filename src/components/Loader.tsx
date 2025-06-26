@@ -10,7 +10,7 @@ const Loader = () => {
         width: "100%",
         height: "100%",
         backgroundColor: "rgba(0, 0, 0, 0.6)",
-        zIndex: (theme) => theme.zIndex.modal + 1, // safer z-index
+        zIndex: (theme) => theme.zIndex.modal + 1,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
