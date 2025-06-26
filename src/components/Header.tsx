@@ -1,6 +1,21 @@
-import { AppBar, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  IconButton,
+  Toolbar,
+  Typography,
+  useTheme,
+  useMediaQuery,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
-const Header = () => {
+type Props = {
+  onMenuClick: () => void;
+};
+
+const Header = ({ onMenuClick }: Props) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <AppBar
       position="fixed"
@@ -8,7 +23,29 @@ const Header = () => {
       sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
     >
       <Toolbar>
-        <Typography variant="h6" component="div">
+        {isMobile && (
+          <IconButton
+            color="inherit"
+            edge="start"
+            onClick={onMenuClick}
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+        )}
+        <Typography
+          variant="h5"
+          noWrap
+          component="div"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            position: "relative",
+            textAlign: "center",
+            width: "100%",
+          }}
+        >
           Zero Trust App Viewer
         </Typography>
       </Toolbar>

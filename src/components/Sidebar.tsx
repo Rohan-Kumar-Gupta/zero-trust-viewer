@@ -20,24 +20,32 @@ const navItems = [
   { text: "Events", path: "/events", icon: <EventIcon /> },
 ];
 
-const Sidebar = () => {
+type Props = {
+  variant: "permanent" | "temporary";
+  open: boolean;
+  onClose?: () => void;
+};
+
+const Sidebar = ({ variant, open, onClose }: Props) => {
   const location = useLocation();
 
   return (
     <Drawer
-      variant="permanent"
+      variant={variant}
+      open={open}
+      onClose={onClose}
       sx={{
         width: drawerWidth,
         flexShrink: 0,
-        height: "calc(100vh - 64px)",
         [`& .MuiDrawer-paper`]: {
           width: drawerWidth,
+          top: "64px",
           boxSizing: "border-box",
           backgroundColor: "#f5f5f5",
         },
       }}
     >
-      <Box sx={{ mt: 2 }}>
+      <Box>
         <List>
           {navItems.map((item) => (
             <ListItem key={item.text} disablePadding>
@@ -45,6 +53,7 @@ const Sidebar = () => {
                 component={Link}
                 to={item.path}
                 selected={location.pathname === item.path}
+                onClick={onClose} // 👈 Close drawer on item click
               >
                 <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText primary={item.text} />
