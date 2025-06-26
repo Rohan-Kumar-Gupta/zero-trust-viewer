@@ -1,0 +1,66 @@
+export const policiesData = [
+    {
+      id: 1,
+      name: "policy_web_access",
+      criteria: "User = Group A",
+      description: "Allows web access for Group A.",
+      score: { current: 90, max: 100 },
+    },
+    {
+      id: 2,
+      name: "policy_db_protect",
+      criteria: "App = DB Service",
+      description: "Protects sensitive DB access.",
+      score: { current: 95, max: 95 },
+    },
+    {
+      id: 3,
+      name: "policy_remote_access",
+      criteria: "Device = VPN",
+      description: "Controls remote VPN access.",
+      score: { current: 70, max: 80 },
+    },
+    {
+        id: 4,
+        name: "policy_web_access",
+        criteria: "User = Group A",
+        description: "Allows web access for Group A.",
+        score: { current: 90, max: 100 },
+      },
+      {
+        id: 5,
+        name: "policy_db_protect",
+        criteria: "App = DB Service",
+        description: "Protects sensitive DB access.",
+        score: { current: 95, max: 95 },
+      },
+      {
+        id: 6,
+        name: "policy_remote_access",
+        criteria: "Device = VPN",
+        description: "Controls remote VPN access.",
+        score: { current: 70, max: 80 },
+      },
+      {
+        id: 7,
+        name: "policy_web_access",
+        criteria: "User = Group A",
+        description: "Allows web access for Group A.",
+        score: { current: 90, max: 100 },
+      },
+      {
+        id: 8,
+        name: "policy_db_protect",
+        criteria: "App = DB Service",
+        description: "Protects sensitive DB access.",
+        score: { current: 95, max: 95 },
+      },
+      {
+        id: 9,
+        name: "policy_remote_access",
+        criteria: "Device = VPN",
+        description: "Controls remote VPN access.",
+        score: { current: 70, max: 80 },
+      },
+  ];
+  
