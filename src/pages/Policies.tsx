@@ -70,9 +70,12 @@ const Policies = () => {
         sx={{ mb: 2 }}
       />
       <TableContainer component={Paper}>
-        <Table>
+        <Table sx={{overflow: "auto"}}>
           <TableHead sx={{ backgroundColor: "#f5f5f5" }}>
             <TableRow>
+              <TableCell>
+                <strong>Precedence</strong>
+              </TableCell>
               <TableCell>
                 <strong>Name</strong>
               </TableCell>
@@ -93,6 +96,7 @@ const Policies = () => {
           <TableBody>
             {paginatedData.map((row) => (
               <TableRow key={row.id}>
+                <TableCell>{row.precedence}</TableCell>
                 <TableCell>{row.name}</TableCell>
                 <TableCell>
                   <Chip
@@ -119,7 +123,7 @@ const Policies = () => {
         </Table>
       </TableContainer>
 
-      <Box display="flex" justifyContent="flex-end" mt={2}>
+      <Box display="flex" justifyContent="center" mt={2}>
         <Pagination
           count={Math.ceil(filteredData.length / rowsPerPage)}
           page={page}

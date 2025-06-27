@@ -3,11 +3,11 @@ import SmartphoneIcon from "@mui/icons-material/Smartphone";
 import CloudIcon from "@mui/icons-material/Cloud";
 import TabletMacIcon from "@mui/icons-material/TabletMac";
 import WebAssetIcon from "@mui/icons-material/WebAsset";
+import StorageIcon from "@mui/icons-material/Storage";
 
 export const getAssetTypeIcon = (type: string) => {
   switch (type.toLowerCase()) {
     case "computer":
-    case "server":
     case "laptop":
       return <ComputerIcon />;
     case "mobile":
@@ -16,6 +16,8 @@ export const getAssetTypeIcon = (type: string) => {
       return <CloudIcon />;
     case "tablet":
       return <TabletMacIcon />;
+    case "server":
+      return <StorageIcon />;
     default:
       return <WebAssetIcon />;
   }
@@ -37,11 +39,11 @@ export const getAssetImpactColor = (impact: string): string => {
 };
 
 export const getCriteriaColor = (criteria: string) => {
-  if (criteria.startsWith("User")) return "primary";     
-  if (criteria.startsWith("App")) return "success";      
-  if (criteria.startsWith("Device")) return "warning";   
-  if (criteria.startsWith("Role")) return "secondary";   
-  if (criteria.startsWith("Location")) return "info";  
+  if (criteria.startsWith("User")) return "primary";
+  if (criteria.startsWith("App")) return "success";
+  if (criteria.startsWith("Device")) return "warning";
+  if (criteria.startsWith("Role")) return "secondary";
+  if (criteria.startsWith("Location")) return "info";
   return "default";
 };
 
@@ -49,7 +51,7 @@ export const getStatusColor = (status: string) => {
   switch (status.toLowerCase()) {
     case "resolved":
     case "success":
-      return "success"; 
+      return "success";
 
     case "investigating":
     case "in progress":
@@ -63,10 +65,9 @@ export const getStatusColor = (status: string) => {
 
     case "pending":
     case "queued":
-      return "info"; 
+      return "info";
 
     default:
-      return "default"; 
+      return "default";
   }
 };
-

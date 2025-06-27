@@ -82,7 +82,13 @@ const Assets = () => {
                 <strong>Impact</strong>
               </TableCell>
               <TableCell>
+                <strong>AttackSurfaceSecurity</strong>
+              </TableCell>
+              <TableCell>
                 <strong>Status</strong>
+              </TableCell>
+              <TableCell>
+                <strong>AttackSurfaceStatus</strong>
               </TableCell>
             </TableRow>
           </TableHead>
@@ -116,7 +122,29 @@ const Assets = () => {
                     {row.impact}
                   </Typography>
                 </TableCell>
-                <TableCell>{row.status}</TableCell>
+                <TableCell sx={{ color: "#90a4ae" }}>
+                  {row.attackSurfaceSecurity}
+                </TableCell>
+                <TableCell
+                  sx={{
+                    color:
+                      row.status === "Active"
+                        ? "#008080"
+                        : "#8B8589",
+                  }}
+                >
+                  {row.status}
+                </TableCell>
+                <TableCell
+                  sx={{
+                    color:
+                      row.attackSurfaceStatus === "Unmonitored"
+                        ? "red"
+                        : "green",
+                  }}
+                >
+                  {row.attackSurfaceStatus}
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>

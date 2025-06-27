@@ -7,7 +7,12 @@ export const policiesData = [
       "score": {
         "current": 65,
         "max": 95
-      }
+      },
+      "precedence": 1,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-A"
     },
     {
       "id": 2,
@@ -17,7 +22,12 @@ export const policiesData = [
       "score": {
         "current": 62,
         "max": 80
-      }
+      },
+      "precedence": 2,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-B"
     },
     {
       "id": 3,
@@ -27,7 +37,12 @@ export const policiesData = [
       "score": {
         "current": 71,
         "max": 90
-      }
+      },
+      "precedence": 3,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-C"
     },
     {
       "id": 4,
@@ -37,7 +52,12 @@ export const policiesData = [
       "score": {
         "current": 77,
         "max": 95
-      }
+      },
+      "precedence": 4,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-D"
     },
     {
       "id": 5,
@@ -47,7 +67,12 @@ export const policiesData = [
       "score": {
         "current": 55,
         "max": 80
-      }
+      },
+      "precedence": 5,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-E"
     },
     {
       "id": 6,
@@ -57,7 +82,12 @@ export const policiesData = [
       "score": {
         "current": 78,
         "max": 80
-      }
+      },
+      "precedence": 6,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-F"
     },
     {
       "id": 7,
@@ -67,7 +97,12 @@ export const policiesData = [
       "score": {
         "current": 78,
         "max": 90
-      }
+      },
+      "precedence": 7,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-G"
     },
     {
       "id": 8,
@@ -77,7 +112,12 @@ export const policiesData = [
       "score": {
         "current": 78,
         "max": 100
-      }
+      },
+      "precedence": 8,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-H"
     },
     {
       "id": 9,
@@ -87,7 +127,12 @@ export const policiesData = [
       "score": {
         "current": 82,
         "max": 95
-      }
+      },
+      "precedence": 9,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-I"
     },
     {
       "id": 10,
@@ -97,7 +142,12 @@ export const policiesData = [
       "score": {
         "current": 76,
         "max": 95
-      }
+      },
+      "precedence": 10,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-J"
     },
     {
       "id": 11,
@@ -107,7 +157,12 @@ export const policiesData = [
       "score": {
         "current": 78,
         "max": 90
-      }
+      },
+      "precedence": 11,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-K"
     },
     {
       "id": 12,
@@ -117,7 +172,12 @@ export const policiesData = [
       "score": {
         "current": 67,
         "max": 95
-      }
+      },
+      "precedence": 12,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-L"
     },
     {
       "id": 13,
@@ -127,7 +187,12 @@ export const policiesData = [
       "score": {
         "current": 63,
         "max": 80
-      }
+      },
+      "precedence": 13,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-M"
     },
     {
       "id": 14,
@@ -137,7 +202,12 @@ export const policiesData = [
       "score": {
         "current": 72,
         "max": 95
-      }
+      },
+      "precedence": 14,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-N"
     },
     {
       "id": 15,
@@ -147,7 +217,12 @@ export const policiesData = [
       "score": {
         "current": 90,
         "max": 90
-      }
+      },
+      "precedence": 15,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-O"
     },
     {
       "id": 16,
@@ -157,7 +232,12 @@ export const policiesData = [
       "score": {
         "current": 70,
         "max": 90
-      }
+      },
+      "precedence": 16,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-P"
     },
     {
       "id": 17,
@@ -167,7 +247,12 @@ export const policiesData = [
       "score": {
         "current": 77,
         "max": 80
-      }
+      },
+      "precedence": 17,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-Q"
     },
     {
       "id": 18,
@@ -177,7 +262,12 @@ export const policiesData = [
       "score": {
         "current": 69,
         "max": 90
-      }
+      },
+      "precedence": 18,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-R"
     },
     {
       "id": 19,
@@ -187,7 +277,12 @@ export const policiesData = [
       "score": {
         "current": 98,
         "max": 100
-      }
+      },
+      "precedence": 19,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-S"
     },
     {
       "id": 20,
@@ -197,7 +292,12 @@ export const policiesData = [
       "score": {
         "current": 61,
         "max": 90
-      }
+      },
+      "precedence": 20,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-T"
     },
     {
       "id": 21,
@@ -207,7 +307,12 @@ export const policiesData = [
       "score": {
         "current": 58,
         "max": 80
-      }
+      },
+      "precedence": 21,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-U"
     },
     {
       "id": 22,
@@ -217,7 +322,12 @@ export const policiesData = [
       "score": {
         "current": 86,
         "max": 95
-      }
+      },
+      "precedence": 22,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-V"
     },
     {
       "id": 23,
@@ -227,7 +337,12 @@ export const policiesData = [
       "score": {
         "current": 75,
         "max": 100
-      }
+      },
+      "precedence": 23,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-W"
     },
     {
       "id": 24,
@@ -237,7 +352,12 @@ export const policiesData = [
       "score": {
         "current": 73,
         "max": 100
-      }
+      },
+      "precedence": 24,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-X"
     },
     {
       "id": 25,
@@ -247,7 +367,12 @@ export const policiesData = [
       "score": {
         "current": 81,
         "max": 95
-      }
+      },
+      "precedence": 25,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-Y"
     },
     {
       "id": 26,
@@ -257,7 +382,12 @@ export const policiesData = [
       "score": {
         "current": 68,
         "max": 90
-      }
+      },
+      "precedence": 26,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-Z"
     },
     {
       "id": 27,
@@ -267,7 +397,12 @@ export const policiesData = [
       "score": {
         "current": 73,
         "max": 80
-      }
+      },
+      "precedence": 27,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-A"
     },
     {
       "id": 28,
@@ -277,7 +412,12 @@ export const policiesData = [
       "score": {
         "current": 52,
         "max": 80
-      }
+      },
+      "precedence": 28,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-B"
     },
     {
       "id": 29,
@@ -287,7 +427,12 @@ export const policiesData = [
       "score": {
         "current": 87,
         "max": 90
-      }
+      },
+      "precedence": 29,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-C"
     },
     {
       "id": 30,
@@ -297,7 +442,12 @@ export const policiesData = [
       "score": {
         "current": 62,
         "max": 80
-      }
+      },
+      "precedence": 30,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-D"
     },
     {
       "id": 31,
@@ -307,7 +457,12 @@ export const policiesData = [
       "score": {
         "current": 52,
         "max": 80
-      }
+      },
+      "precedence": 31,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-E"
     },
     {
       "id": 32,
@@ -317,7 +472,12 @@ export const policiesData = [
       "score": {
         "current": 88,
         "max": 90
-      }
+      },
+      "precedence": 32,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-F"
     },
     {
       "id": 33,
@@ -327,7 +487,12 @@ export const policiesData = [
       "score": {
         "current": 67,
         "max": 80
-      }
+      },
+      "precedence": 33,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-G"
     },
     {
       "id": 34,
@@ -337,7 +502,12 @@ export const policiesData = [
       "score": {
         "current": 68,
         "max": 90
-      }
+      },
+      "precedence": 34,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-H"
     },
     {
       "id": 35,
@@ -347,7 +517,12 @@ export const policiesData = [
       "score": {
         "current": 75,
         "max": 100
-      }
+      },
+      "precedence": 35,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-I"
     },
     {
       "id": 36,
@@ -357,7 +532,12 @@ export const policiesData = [
       "score": {
         "current": 80,
         "max": 100
-      }
+      },
+      "precedence": 36,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-J"
     },
     {
       "id": 37,
@@ -367,7 +547,12 @@ export const policiesData = [
       "score": {
         "current": 86,
         "max": 90
-      }
+      },
+      "precedence": 37,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-K"
     },
     {
       "id": 38,
@@ -377,7 +562,12 @@ export const policiesData = [
       "score": {
         "current": 64,
         "max": 80
-      }
+      },
+      "precedence": 38,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-L"
     },
     {
       "id": 39,
@@ -387,7 +577,12 @@ export const policiesData = [
       "score": {
         "current": 83,
         "max": 90
-      }
+      },
+      "precedence": 39,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-M"
     },
     {
       "id": 40,
@@ -397,7 +592,12 @@ export const policiesData = [
       "score": {
         "current": 89,
         "max": 95
-      }
+      },
+      "precedence": 40,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-N"
     },
     {
       "id": 41,
@@ -407,7 +607,12 @@ export const policiesData = [
       "score": {
         "current": 69,
         "max": 95
-      }
+      },
+      "precedence": 41,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-O"
     },
     {
       "id": 42,
@@ -417,7 +622,12 @@ export const policiesData = [
       "score": {
         "current": 96,
         "max": 100
-      }
+      },
+      "precedence": 42,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-P"
     },
     {
       "id": 43,
@@ -427,7 +637,12 @@ export const policiesData = [
       "score": {
         "current": 67,
         "max": 90
-      }
+      },
+      "precedence": 43,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-Q"
     },
     {
       "id": 44,
@@ -437,7 +652,12 @@ export const policiesData = [
       "score": {
         "current": 97,
         "max": 100
-      }
+      },
+      "precedence": 44,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-R"
     },
     {
       "id": 45,
@@ -447,7 +667,12 @@ export const policiesData = [
       "score": {
         "current": 87,
         "max": 90
-      }
+      },
+      "precedence": 45,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-S"
     },
     {
       "id": 46,
@@ -457,7 +682,12 @@ export const policiesData = [
       "score": {
         "current": 68,
         "max": 80
-      }
+      },
+      "precedence": 46,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-T"
     },
     {
       "id": 47,
@@ -467,7 +697,12 @@ export const policiesData = [
       "score": {
         "current": 70,
         "max": 80
-      }
+      },
+      "precedence": 47,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-U"
     },
     {
       "id": 48,
@@ -477,7 +712,12 @@ export const policiesData = [
       "score": {
         "current": 82,
         "max": 90
-      }
+      },
+      "precedence": 48,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-V"
     },
     {
       "id": 49,
@@ -487,7 +727,12 @@ export const policiesData = [
       "score": {
         "current": 57,
         "max": 80
-      }
+      },
+      "precedence": 49,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-W"
     },
     {
       "id": 50,
@@ -497,7 +742,12 @@ export const policiesData = [
       "score": {
         "current": 74,
         "max": 80
-      }
+      },
+      "precedence": 50,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-X"
     },
     {
       "id": 51,
@@ -507,7 +757,12 @@ export const policiesData = [
       "score": {
         "current": 93,
         "max": 95
-      }
+      },
+      "precedence": 51,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-Y"
     },
     {
       "id": 52,
@@ -517,7 +772,12 @@ export const policiesData = [
       "score": {
         "current": 72,
         "max": 95
-      }
+      },
+      "precedence": 52,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-Z"
     },
     {
       "id": 53,
@@ -527,7 +787,12 @@ export const policiesData = [
       "score": {
         "current": 75,
         "max": 100
-      }
+      },
+      "precedence": 53,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-A"
     },
     {
       "id": 54,
@@ -537,7 +802,12 @@ export const policiesData = [
       "score": {
         "current": 74,
         "max": 80
-      }
+      },
+      "precedence": 54,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-B"
     },
     {
       "id": 55,
@@ -547,7 +817,12 @@ export const policiesData = [
       "score": {
         "current": 72,
         "max": 80
-      }
+      },
+      "precedence": 55,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-C"
     },
     {
       "id": 56,
@@ -557,7 +832,12 @@ export const policiesData = [
       "score": {
         "current": 69,
         "max": 80
-      }
+      },
+      "precedence": 56,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-D"
     },
     {
       "id": 57,
@@ -567,7 +847,12 @@ export const policiesData = [
       "score": {
         "current": 78,
         "max": 80
-      }
+      },
+      "precedence": 57,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-E"
     },
     {
       "id": 58,
@@ -577,7 +862,12 @@ export const policiesData = [
       "score": {
         "current": 83,
         "max": 90
-      }
+      },
+      "precedence": 58,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-F"
     },
     {
       "id": 59,
@@ -587,7 +877,12 @@ export const policiesData = [
       "score": {
         "current": 63,
         "max": 80
-      }
+      },
+      "precedence": 59,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-G"
     },
     {
       "id": 60,
@@ -597,7 +892,12 @@ export const policiesData = [
       "score": {
         "current": 71,
         "max": 100
-      }
+      },
+      "precedence": 60,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-H"
     },
     {
       "id": 61,
@@ -607,7 +907,12 @@ export const policiesData = [
       "score": {
         "current": 82,
         "max": 95
-      }
+      },
+      "precedence": 61,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-I"
     },
     {
       "id": 62,
@@ -617,7 +922,12 @@ export const policiesData = [
       "score": {
         "current": 72,
         "max": 95
-      }
+      },
+      "precedence": 62,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-J"
     },
     {
       "id": 63,
@@ -627,7 +937,12 @@ export const policiesData = [
       "score": {
         "current": 63,
         "max": 90
-      }
+      },
+      "precedence": 63,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-K"
     },
     {
       "id": 64,
@@ -637,7 +952,12 @@ export const policiesData = [
       "score": {
         "current": 82,
         "max": 100
-      }
+      },
+      "precedence": 64,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-L"
     },
     {
       "id": 65,
@@ -647,7 +967,12 @@ export const policiesData = [
       "score": {
         "current": 71,
         "max": 95
-      }
+      },
+      "precedence": 65,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-M"
     },
     {
       "id": 66,
@@ -657,7 +982,12 @@ export const policiesData = [
       "score": {
         "current": 74,
         "max": 95
-      }
+      },
+      "precedence": 66,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-N"
     },
     {
       "id": 67,
@@ -667,7 +997,12 @@ export const policiesData = [
       "score": {
         "current": 88,
         "max": 95
-      }
+      },
+      "precedence": 67,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-O"
     },
     {
       "id": 68,
@@ -677,7 +1012,12 @@ export const policiesData = [
       "score": {
         "current": 92,
         "max": 95
-      }
+      },
+      "precedence": 68,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-P"
     },
     {
       "id": 69,
@@ -687,7 +1027,12 @@ export const policiesData = [
       "score": {
         "current": 91,
         "max": 100
-      }
+      },
+      "precedence": 69,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-Q"
     },
     {
       "id": 70,
@@ -697,7 +1042,12 @@ export const policiesData = [
       "score": {
         "current": 81,
         "max": 90
-      }
+      },
+      "precedence": 70,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-R"
     },
     {
       "id": 71,
@@ -707,7 +1057,12 @@ export const policiesData = [
       "score": {
         "current": 67,
         "max": 90
-      }
+      },
+      "precedence": 71,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-S"
     },
     {
       "id": 72,
@@ -717,7 +1072,12 @@ export const policiesData = [
       "score": {
         "current": 85,
         "max": 100
-      }
+      },
+      "precedence": 72,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-T"
     },
     {
       "id": 73,
@@ -727,7 +1087,12 @@ export const policiesData = [
       "score": {
         "current": 62,
         "max": 80
-      }
+      },
+      "precedence": 73,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-U"
     },
     {
       "id": 74,
@@ -737,7 +1102,12 @@ export const policiesData = [
       "score": {
         "current": 60,
         "max": 90
-      }
+      },
+      "precedence": 74,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-V"
     },
     {
       "id": 75,
@@ -747,7 +1117,12 @@ export const policiesData = [
       "score": {
         "current": 72,
         "max": 100
-      }
+      },
+      "precedence": 75,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-W"
     },
     {
       "id": 76,
@@ -757,7 +1132,12 @@ export const policiesData = [
       "score": {
         "current": 84,
         "max": 95
-      }
+      },
+      "precedence": 76,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-X"
     },
     {
       "id": 77,
@@ -767,7 +1147,12 @@ export const policiesData = [
       "score": {
         "current": 75,
         "max": 90
-      }
+      },
+      "precedence": 77,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-Y"
     },
     {
       "id": 78,
@@ -777,7 +1162,12 @@ export const policiesData = [
       "score": {
         "current": 72,
         "max": 95
-      }
+      },
+      "precedence": 78,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-Z"
     },
     {
       "id": 79,
@@ -787,7 +1177,12 @@ export const policiesData = [
       "score": {
         "current": 70,
         "max": 90
-      }
+      },
+      "precedence": 79,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-A"
     },
     {
       "id": 80,
@@ -797,7 +1192,12 @@ export const policiesData = [
       "score": {
         "current": 88,
         "max": 95
-      }
+      },
+      "precedence": 80,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-B"
     },
     {
       "id": 81,
@@ -807,7 +1207,12 @@ export const policiesData = [
       "score": {
         "current": 74,
         "max": 90
-      }
+      },
+      "precedence": 81,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-C"
     },
     {
       "id": 82,
@@ -817,7 +1222,12 @@ export const policiesData = [
       "score": {
         "current": 86,
         "max": 100
-      }
+      },
+      "precedence": 82,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-D"
     },
     {
       "id": 83,
@@ -827,7 +1237,12 @@ export const policiesData = [
       "score": {
         "current": 78,
         "max": 90
-      }
+      },
+      "precedence": 83,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-E"
     },
     {
       "id": 84,
@@ -837,7 +1252,12 @@ export const policiesData = [
       "score": {
         "current": 89,
         "max": 95
-      }
+      },
+      "precedence": 84,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-F"
     },
     {
       "id": 85,
@@ -847,7 +1267,12 @@ export const policiesData = [
       "score": {
         "current": 74,
         "max": 95
-      }
+      },
+      "precedence": 85,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-G"
     },
     {
       "id": 86,
@@ -857,7 +1282,12 @@ export const policiesData = [
       "score": {
         "current": 76,
         "max": 100
-      }
+      },
+      "precedence": 86,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-H"
     },
     {
       "id": 87,
@@ -867,7 +1297,12 @@ export const policiesData = [
       "score": {
         "current": 65,
         "max": 95
-      }
+      },
+      "precedence": 87,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-I"
     },
     {
       "id": 88,
@@ -877,7 +1312,12 @@ export const policiesData = [
       "score": {
         "current": 51,
         "max": 80
-      }
+      },
+      "precedence": 88,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-J"
     },
     {
       "id": 89,
@@ -887,7 +1327,12 @@ export const policiesData = [
       "score": {
         "current": 66,
         "max": 80
-      }
+      },
+      "precedence": 89,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-K"
     },
     {
       "id": 90,
@@ -897,7 +1342,12 @@ export const policiesData = [
       "score": {
         "current": 68,
         "max": 80
-      }
+      },
+      "precedence": 90,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-L"
     },
     {
       "id": 91,
@@ -907,7 +1357,12 @@ export const policiesData = [
       "score": {
         "current": 85,
         "max": 100
-      }
+      },
+      "precedence": 91,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-M"
     },
     {
       "id": 92,
@@ -917,7 +1372,12 @@ export const policiesData = [
       "score": {
         "current": 75,
         "max": 90
-      }
+      },
+      "precedence": 92,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-N"
     },
     {
       "id": 93,
@@ -927,7 +1387,12 @@ export const policiesData = [
       "score": {
         "current": 53,
         "max": 80
-      }
+      },
+      "precedence": 93,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-O"
     },
     {
       "id": 94,
@@ -937,7 +1402,12 @@ export const policiesData = [
       "score": {
         "current": 78,
         "max": 90
-      }
+      },
+      "precedence": 94,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-P"
     },
     {
       "id": 95,
@@ -947,7 +1417,12 @@ export const policiesData = [
       "score": {
         "current": 88,
         "max": 95
-      }
+      },
+      "precedence": 95,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-Q"
     },
     {
       "id": 96,
@@ -957,7 +1432,12 @@ export const policiesData = [
       "score": {
         "current": 91,
         "max": 100
-      }
+      },
+      "precedence": 96,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-R"
     },
     {
       "id": 97,
@@ -967,7 +1447,12 @@ export const policiesData = [
       "score": {
         "current": 73,
         "max": 100
-      }
+      },
+      "precedence": 97,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-S"
     },
     {
       "id": 98,
@@ -977,7 +1462,12 @@ export const policiesData = [
       "score": {
         "current": 85,
         "max": 90
-      }
+      },
+      "precedence": 98,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-T"
     },
     {
       "id": 99,
@@ -987,7 +1477,12 @@ export const policiesData = [
       "score": {
         "current": 77,
         "max": 95
-      }
+      },
+      "precedence": 99,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-U"
     },
     {
       "id": 100,
@@ -997,6 +1492,11 @@ export const policiesData = [
       "score": {
         "current": 79,
         "max": 80
-      }
+      },
+      "precedence": 100,
+      "templates": [
+        "DefaultTemplate"
+      ],
+      "namedNet": "Net-V"
     }
   ];

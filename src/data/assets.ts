@@ -1,25 +1,35 @@
 export const assetsData = [
     {
       "id": 1,
-      "type": "cloud",
+      "type": "server",
       "name": "server-backup-35",
       "tags": [
         "Development"
       ],
       "os": "Ubuntu",
       "impact": "High",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Backup_35",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 2,
-      "type": "tablet",
+      "type": "cloud",
       "name": "cloud-test-27",
       "tags": [
         "Development"
       ],
       "os": "macOS",
       "impact": "Medium",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Cloud_Test_27",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 3,
@@ -30,18 +40,28 @@ export const assetsData = [
       ],
       "os": "iOS",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Mobile_Backup_96",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 4,
-      "type": "cloud",
+      "type": "server",
       "name": "mobile-prod-73",
       "tags": [
         "Test"
       ],
       "os": "Ubuntu",
       "impact": "High",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Mobile_Prod_73",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 5,
@@ -52,7 +72,12 @@ export const assetsData = [
       ],
       "os": "iOS",
       "impact": "Medium",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Prod_96",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 6,
@@ -63,7 +88,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Test_100",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 7,
@@ -74,7 +104,12 @@ export const assetsData = [
       ],
       "os": "macOS",
       "impact": "Medium",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Node_Test_51",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 8,
@@ -85,7 +120,12 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "Medium",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Node_Prod_59",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 9,
@@ -96,7 +136,12 @@ export const assetsData = [
       ],
       "os": "iOS",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Test_41",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 10,
@@ -107,7 +152,12 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "High",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Cloud_Prod_37",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 11,
@@ -118,29 +168,44 @@ export const assetsData = [
       ],
       "os": "macOS",
       "impact": "Medium",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Test_06",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 12,
-      "type": "mobile",
+      "type": "cloud",
       "name": "cloud-prod-45",
       "tags": [
         "Cloud"
       ],
       "os": "Android",
       "impact": "High",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Cloud_Prod_45",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 13,
-      "type": "cloud",
+      "type": "server",
       "name": "node-test-01",
       "tags": [
         "Development"
       ],
       "os": "Linux",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Node_Test_01",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 14,
@@ -151,7 +216,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Critical",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Mobile_Test_61",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 15,
@@ -162,7 +232,12 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "High",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Cloud_Test_31",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 16,
@@ -173,18 +248,28 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Critical",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Asset_Dev_30",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 17,
-      "type": "cloud",
+      "type": "server",
       "name": "node-test-29",
       "tags": [
         "Development"
       ],
       "os": "macOS",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Node_Test_29",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 18,
@@ -195,7 +280,12 @@ export const assetsData = [
       ],
       "os": "macOS",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Backup_26",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 19,
@@ -206,7 +296,12 @@ export const assetsData = [
       ],
       "os": "iOS",
       "impact": "Medium",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Cloud_Test_14",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 20,
@@ -217,7 +312,12 @@ export const assetsData = [
       ],
       "os": "Android",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Mobile_Test_28",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 21,
@@ -228,7 +328,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Backup_15",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 22,
@@ -239,18 +344,28 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Node_Prod_06",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 23,
-      "type": "cloud",
+      "type": "server",
       "name": "server-dev-62",
       "tags": [
         "Cloud"
       ],
       "os": "Linux",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Dev_62",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 24,
@@ -261,18 +376,28 @@ export const assetsData = [
       ],
       "os": "iOS",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Cloud_Dev_91",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 25,
-      "type": "cloud",
+      "type": "server",
       "name": "mobile-backup-47",
       "tags": [
         "Test"
       ],
       "os": "Ubuntu",
       "impact": "Medium",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Mobile_Backup_47",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 26,
@@ -283,7 +408,12 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "High",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Node_Test_73",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 27,
@@ -294,18 +424,28 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Low",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Mobile_Dev_87",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 28,
-      "type": "cloud",
+      "type": "server",
       "name": "node-test-77",
       "tags": [
         "Test"
       ],
       "os": "Windows",
       "impact": "High",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Node_Test_77",
+      "osFamily": "Windows",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 29,
@@ -316,18 +456,28 @@ export const assetsData = [
       ],
       "os": "iOS",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Node_Backup_92",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 30,
-      "type": "cloud",
+      "type": "server",
       "name": "node-prod-88",
       "tags": [
         "Development"
       ],
       "os": "Ubuntu",
       "impact": "Medium",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Node_Prod_88",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 31,
@@ -338,29 +488,44 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "High",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Cloud_Dev_48",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 32,
-      "type": "cloud",
+      "type": "server",
       "name": "server-test-47",
       "tags": [
         "Development"
       ],
       "os": "Android",
       "impact": "High",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Test_47",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 33,
-      "type": "cloud",
+      "type": "server",
       "name": "cloud-test-66",
       "tags": [
         "Production"
       ],
       "os": "Android",
       "impact": "Medium",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Cloud_Test_66",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 34,
@@ -371,7 +536,12 @@ export const assetsData = [
       ],
       "os": "macOS",
       "impact": "High",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Dev_87",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 35,
@@ -382,7 +552,12 @@ export const assetsData = [
       ],
       "os": "Android",
       "impact": "Medium",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Dev_24",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 36,
@@ -393,18 +568,28 @@ export const assetsData = [
       ],
       "os": "Windows",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Test_30",
+      "osFamily": "Windows",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 37,
-      "type": "cloud",
+      "type": "server",
       "name": "cloud-backup-83",
       "tags": [
         "Backup"
       ],
       "os": "Android",
       "impact": "Medium",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Cloud_Backup_83",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 38,
@@ -415,7 +600,12 @@ export const assetsData = [
       ],
       "os": "Android",
       "impact": "Medium",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Server_Test_30",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 39,
@@ -426,7 +616,12 @@ export const assetsData = [
       ],
       "os": "Windows",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Prod_31",
+      "osFamily": "Windows",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 40,
@@ -437,7 +632,12 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "High",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Asset_Backup_88",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 41,
@@ -448,7 +648,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "High",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Node_Test_16",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 42,
@@ -459,29 +664,44 @@ export const assetsData = [
       ],
       "os": "Windows",
       "impact": "High",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Node_Prod_30",
+      "osFamily": "Windows",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 43,
-      "type": "cloud",
+      "type": "server",
       "name": "server-prod-44",
       "tags": [
         "Cloud"
       ],
       "os": "iOS",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Prod_44",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 44,
-      "type": "cloud",
+      "type": "server",
       "name": "server-test-32",
       "tags": [
         "Test"
       ],
       "os": "Ubuntu",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Test_32",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 45,
@@ -492,7 +712,12 @@ export const assetsData = [
       ],
       "os": "Windows",
       "impact": "Medium",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Prod_11",
+      "osFamily": "Windows",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 46,
@@ -503,7 +728,12 @@ export const assetsData = [
       ],
       "os": "macOS",
       "impact": "Critical",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Server_Test_42",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 47,
@@ -514,7 +744,12 @@ export const assetsData = [
       ],
       "os": "Windows",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Cloud_Dev_82",
+      "osFamily": "Windows",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 48,
@@ -525,18 +760,28 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "High",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Mobile_Dev_16",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 49,
-      "type": "computer",
+      "type": "cloud",
       "name": "cloud-dev-36",
       "tags": [
         "Development"
       ],
       "os": "Ubuntu",
       "impact": "Critical",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Cloud_Dev_36",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 50,
@@ -547,40 +792,60 @@ export const assetsData = [
       ],
       "os": "Android",
       "impact": "Medium",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Asset_Dev_40",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 51,
-      "type": "cloud",
+      "type": "server",
       "name": "server-prod-37",
       "tags": [
         "Production"
       ],
       "os": "Linux",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Prod_37",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 52,
-      "type": "cloud",
+      "type": "server",
       "name": "server-dev-84",
       "tags": [
         "Cloud"
       ],
       "os": "macOS",
       "impact": "High",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Server_Dev_84",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 53,
-      "type": "cloud",
+      "type": "server",
       "name": "cloud-dev-55",
       "tags": [
         "Cloud"
       ],
       "os": "iOS",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Cloud_Dev_55",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 54,
@@ -591,7 +856,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Medium",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Asset_Test_28",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 55,
@@ -602,7 +872,12 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "Critical",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Cloud_Test_13",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 56,
@@ -613,7 +888,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Critical",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Node_Test_26",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 57,
@@ -624,7 +904,12 @@ export const assetsData = [
       ],
       "os": "macOS",
       "impact": "High",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Asset_Test_91",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 58,
@@ -635,18 +920,28 @@ export const assetsData = [
       ],
       "os": "Windows",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Node_Prod_81",
+      "osFamily": "Windows",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 59,
-      "type": "cloud",
+      "type": "server",
       "name": "asset-dev-20",
       "tags": [
         "Development"
       ],
       "os": "iOS",
       "impact": "High",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Dev_20",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 60,
@@ -657,7 +952,12 @@ export const assetsData = [
       ],
       "os": "macOS",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Mobile_Test_12",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 61,
@@ -668,7 +968,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Medium",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Node_Backup_42",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 62,
@@ -679,7 +984,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Test_42",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 63,
@@ -690,7 +1000,12 @@ export const assetsData = [
       ],
       "os": "Android",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Cloud_Test_30",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 64,
@@ -701,7 +1016,12 @@ export const assetsData = [
       ],
       "os": "macOS",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Backup_07",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 65,
@@ -712,7 +1032,12 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Dev_25",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 66,
@@ -723,7 +1048,12 @@ export const assetsData = [
       ],
       "os": "Windows",
       "impact": "High",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Node_Backup_18",
+      "osFamily": "Windows",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 67,
@@ -734,7 +1064,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "High",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Asset_Backup_43",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 68,
@@ -745,18 +1080,28 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Medium",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Asset_Backup_78",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 69,
-      "type": "cloud",
+      "type": "server",
       "name": "asset-prod-14",
       "tags": [
         "Backup"
       ],
       "os": "iOS",
       "impact": "Low",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Asset_Prod_14",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 70,
@@ -767,7 +1112,12 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "Medium",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Node_Prod_57",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 71,
@@ -778,7 +1128,12 @@ export const assetsData = [
       ],
       "os": "macOS",
       "impact": "High",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Cloud_Backup_71",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 72,
@@ -789,7 +1144,12 @@ export const assetsData = [
       ],
       "os": "Windows",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Prod_27",
+      "osFamily": "Windows",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 73,
@@ -800,7 +1160,12 @@ export const assetsData = [
       ],
       "os": "iOS",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Prod_66",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 74,
@@ -811,7 +1176,12 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "Critical",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Cloud_Dev_39",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 75,
@@ -822,18 +1192,28 @@ export const assetsData = [
       ],
       "os": "macOS",
       "impact": "Medium",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Prod_28",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 76,
-      "type": "cloud",
+      "type": "server",
       "name": "node-dev-83",
       "tags": [
         "Cloud"
       ],
       "os": "macOS",
       "impact": "Critical",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Node_Dev_83",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 77,
@@ -844,18 +1224,28 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Low",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Asset_Backup_16",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 78,
-      "type": "cloud",
+      "type": "server",
       "name": "asset-prod-69",
       "tags": [
         "Production"
       ],
       "os": "iOS",
       "impact": "Critical",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Asset_Prod_69",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 79,
@@ -866,7 +1256,12 @@ export const assetsData = [
       ],
       "os": "Windows",
       "impact": "Low",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Server_Test_45",
+      "osFamily": "Windows",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 80,
@@ -877,7 +1272,12 @@ export const assetsData = [
       ],
       "os": "Android",
       "impact": "Medium",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Cloud_Backup_97",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 81,
@@ -888,7 +1288,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Critical",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Server_Dev_96",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 82,
@@ -899,7 +1304,12 @@ export const assetsData = [
       ],
       "os": "Windows",
       "impact": "High",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Node_Test_77",
+      "osFamily": "Windows",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 83,
@@ -910,7 +1320,12 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "Low",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Cloud_Dev_27",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 84,
@@ -921,7 +1336,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Critical",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Cloud_Prod_15",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 85,
@@ -932,18 +1352,28 @@ export const assetsData = [
       ],
       "os": "macOS",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Backup_99",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 86,
-      "type": "cloud",
+      "type": "server",
       "name": "mobile-dev-90",
       "tags": [
         "Production"
       ],
       "os": "Android",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Mobile_Dev_90",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 87,
@@ -954,7 +1384,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Mobile_Dev_05",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 88,
@@ -965,7 +1400,12 @@ export const assetsData = [
       ],
       "os": "Android",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Cloud_Test_97",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 89,
@@ -976,7 +1416,12 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Test_14",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 90,
@@ -987,29 +1432,44 @@ export const assetsData = [
       ],
       "os": "Android",
       "impact": "Critical",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Server_Test_55",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 91,
-      "type": "cloud",
+      "type": "server",
       "name": "cloud-dev-93",
       "tags": [
         "Production"
       ],
       "os": "Ubuntu",
       "impact": "Low",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Cloud_Dev_93",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 92,
-      "type": "cloud",
+      "type": "server",
       "name": "mobile-dev-41",
       "tags": [
         "Test"
       ],
       "os": "Windows",
       "impact": "Medium",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Mobile_Dev_41",
+      "osFamily": "Windows",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 93,
@@ -1020,7 +1480,12 @@ export const assetsData = [
       ],
       "os": "iOS",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Node_Prod_31",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 94,
@@ -1031,7 +1496,12 @@ export const assetsData = [
       ],
       "os": "Android",
       "impact": "Medium",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Mobile_Prod_95",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 95,
@@ -1042,7 +1512,12 @@ export const assetsData = [
       ],
       "os": "Android",
       "impact": "Medium",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Test_96",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 96,
@@ -1053,7 +1528,12 @@ export const assetsData = [
       ],
       "os": "Windows",
       "impact": "High",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Mobile_Dev_27",
+      "osFamily": "Windows",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 97,
@@ -1064,7 +1544,12 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "Medium",
-      "status": "Active"
+      "status": "Active",
+      "assetName": "Server_Test_49",
+      "osFamily": "Unix",
+      "breachImpact": "Medium Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Monitored"
     },
     {
       "id": 98,
@@ -1075,18 +1560,28 @@ export const assetsData = [
       ],
       "os": "Linux",
       "impact": "Low",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Server_Prod_90",
+      "osFamily": "Unix",
+      "breachImpact": "Low Breach",
+      "attackSurfaceSecurity": "Hardened",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 99,
-      "type": "cloud",
+      "type": "server",
       "name": "cloud-backup-70",
       "tags": [
         "Test"
       ],
       "os": "iOS",
       "impact": "Critical",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Cloud_Backup_70",
+      "osFamily": "Unix",
+      "breachImpact": "Critical Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     },
     {
       "id": 100,
@@ -1097,6 +1592,11 @@ export const assetsData = [
       ],
       "os": "Ubuntu",
       "impact": "High",
-      "status": "Inactive"
+      "status": "Inactive",
+      "assetName": "Asset_Backup_66",
+      "osFamily": "Unix",
+      "breachImpact": "High Breach",
+      "attackSurfaceSecurity": "Vulnerable",
+      "attackSurfaceStatus": "Unmonitored"
     }
   ];
