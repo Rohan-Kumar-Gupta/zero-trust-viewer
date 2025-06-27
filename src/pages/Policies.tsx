@@ -18,24 +18,27 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { useEffect, useState } from "react";
 import { policiesData } from "../data/policies";
 import Loader from "../components/Loader";
-import { getCriteriaColor } from "../utils/utils";
+import { getCriteriaColor } from "../utils";
+import { LOADER_DELAY_TIME, ROWS_PER_PAGE } from "../utils/constants";
 
 const Policies = () => {
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
-  const rowsPerPage = 6;
+  const rowsPerPage = ROWS_PER_PAGE;
+
+  const delay = LOADER_DELAY_TIME;
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000); // mocked loading for 2 seconds
-  }, []);
+    setTimeout(() => setLoading(false), delay);
+  }, [delay]);
 
   // Debounce logic
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebouncedSearch(search);
-      setPage(1); // reset to page 1 on new search
+      setPage(1); 
     }, 300); // 300ms debounce
 
     return () => {
@@ -47,7 +50,7 @@ const Policies = () => {
     policy.name.toLowerCase().includes(debouncedSearch.toLowerCase())
   );
 
-  console.log("debouncedSearch", debouncedSearch);
+  console.log("debouncedSearchKey", debouncedSearch);
 
   const paginatedData = filteredData.slice(
     (page - 1) * rowsPerPage,
@@ -70,7 +73,7 @@ const Policies = () => {
         sx={{ mb: 2 }}
       />
       <TableContainer component={Paper}>
-        <Table sx={{overflow: "auto"}}>
+        <Table sx={{ overflow: "auto" }}>
           <TableHead sx={{ backgroundColor: "#f5f5f5" }}>
             <TableRow>
               <TableCell>
@@ -123,7 +126,7 @@ const Policies = () => {
         </Table>
       </TableContainer>
 
-      <Box display="flex" justifyContent="center" mt={2}>
+      <Box display="flex" justifyContent="flex-end" mt={2}>
         <Pagination
           count={Math.ceil(filteredData.length / rowsPerPage)}
           page={page}

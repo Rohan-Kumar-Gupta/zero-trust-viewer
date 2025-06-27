@@ -15,16 +15,20 @@ import {
 import { useEffect, useState } from "react";
 import { eventsData } from "../data/event";
 import Loader from "../components/Loader";
-import { getStatusColor } from "../utils/utils";
-
-
+import { getStatusColor } from "../utils";
+import { LOADER_DELAY_TIME, ROWS_PER_PAGE } from "../utils/constants";
 
 const Events = () => {
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
-  const rowsPerPage = 6;
+  const rowsPerPage = ROWS_PER_PAGE;
+  const delay = LOADER_DELAY_TIME;
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), delay);
+  }, [delay]);
 
   useEffect(() => {
     const handler = setTimeout(() => {
@@ -42,10 +46,6 @@ const Events = () => {
     (page - 1) * rowsPerPage,
     page * rowsPerPage
   );
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 2000); // simulate loading
-  }, []);
 
   return (
     <Box>

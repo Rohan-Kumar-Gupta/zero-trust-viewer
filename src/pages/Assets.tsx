@@ -15,20 +15,22 @@ import {
 import { useEffect, useState } from "react";
 import { assetsData } from "../data/assets";
 import Loader from "../components/Loader";
-import { getAssetImpactColor, getAssetTypeIcon } from "../utils/utils";
+import { getAssetImpactColor, getAssetTypeIcon } from "../utils";
+import { LOADER_DELAY_TIME, ROWS_PER_PAGE } from "../utils/constants";
 
 const Assets = () => {
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
-  const rowsPerPage = 6;
+  const rowsPerPage = ROWS_PER_PAGE;
+  const delay = LOADER_DELAY_TIME;
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000);
-  }, []);
+    setTimeout(() => setLoading(false), delay);
+  }, [delay]);
 
-  // debounce
+  // Debounce logic
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebouncedSearch(search);
@@ -127,10 +129,7 @@ const Assets = () => {
                 </TableCell>
                 <TableCell
                   sx={{
-                    color:
-                      row.status === "Active"
-                        ? "#008080"
-                        : "#8B8589",
+                    color: row.status === "Active" ? "#008080" : "#8B8589",
                   }}
                 >
                   {row.status}
