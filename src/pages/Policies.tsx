@@ -20,6 +20,7 @@ import { policiesData } from "../data/policies";
 import Loader from "../components/Loader";
 import { getCriteriaColor } from "../utils";
 import { LOADER_DELAY_TIME, ROWS_PER_PAGE } from "../utils/constants";
+import { filterWithDeepSearch } from "../utils/searchUtils";
 
 const Policies = () => {
   const [search, setSearch] = useState("");
@@ -46,9 +47,7 @@ const Policies = () => {
     };
   }, [search]);
 
-  const filteredData = policiesData.filter((policy) =>
-    policy.name.toLowerCase().includes(debouncedSearch.toLowerCase())
-  );
+  const filteredData = filterWithDeepSearch(policiesData, debouncedSearch);
 
   console.log("debouncedSearchKey", debouncedSearch);
 

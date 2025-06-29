@@ -1,117 +1,86 @@
-import {
-  Box,
-  TextField,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Chip,
-  Typography,
-  Paper,
-  Pagination,
-} from "@mui/material";
 import { useEffect, useState } from "react";
+import { Chip, Box } from "@mui/material";
+import { GridColDef, GridRenderCellParams } from "@mui/x-data-grid";
 import { eventsData } from "../data/event";
 import Loader from "../components/Loader";
 import { getStatusColor } from "../utils";
-import { LOADER_DELAY_TIME, ROWS_PER_PAGE } from "../utils/constants";
+import EnhancedDataGrid from "../components/EnhancedDataGrid";
+import { LOADER_DELAY_TIME } from "../utils/constants";
 
 const Events = () => {
-  const [search, setSearch] = useState("");
-  const [debouncedSearch, setDebouncedSearch] = useState("");
   const [loading, setLoading] = useState(true);
-  const [page, setPage] = useState(1);
-  const rowsPerPage = ROWS_PER_PAGE;
   const delay = LOADER_DELAY_TIME;
 
   useEffect(() => {
     setTimeout(() => setLoading(false), delay);
   }, [delay]);
 
-  useEffect(() => {
-    const handler = setTimeout(() => {
-      setDebouncedSearch(search);
-      setPage(1);
-    }, 300);
-    return () => clearTimeout(handler);
-  }, [search]);
+  const columns: GridColDef[] = [
+    {
+      field: "id",
+      headerName: "ID",
+      width: 80,
+      type: "number",
+    },
+    {
+      field: "timestamp",
+      headerName: "Timestamp",
+      width: 180,
+    },
+    {
+      field: "eventType",
+      headerName: "Event Type",
+      width: 150,
+      flex: 1,
+      minWidth: 120,
+    },
+    {
+      field: "sourceIP",
+      headerName: "Source IP",
+      width: 150,
+      renderCell: (params: GridRenderCellParams) => (
+        <Box sx={{ fontFamily: "monospace" }}>{params.value}</Box>
+      ),
+    },
+    {
+      field: "user",
+      headerName: "User",
+      width: 130,
+      flex: 1,
+      minWidth: 100,
+    },
+    {
+      field: "status",
+      headerName: "Status",
+      width: 120,
+      renderCell: (params: GridRenderCellParams) => (
+        <Chip
+          label={params.value}
+          color={getStatusColor(params.value)}
+          sx={{ fontWeight: "bold", borderRadius: "6px" }}
+          size="small"
+        />
+      ),
+    },
+  ];
 
-  const filteredData = eventsData.filter((event) =>
-    event.eventType.toLowerCase().includes(debouncedSearch.toLowerCase())
-  );
-
-  const paginatedData = filteredData.slice(
-    (page - 1) * rowsPerPage,
-    page * rowsPerPage
-  );
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
-    <Box>
-      {loading && <Loader />}
-
-      <Typography variant="h6" gutterBottom>
-        Events
-      </Typography>
-
-      <TextField
-        fullWidth
-        label="Search Events..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        sx={{ mb: 2 }}
-      />
-
-      <TableContainer component={Paper}>
-        <Table>
-          <TableHead sx={{ backgroundColor: "#f5f5f5" }}>
-            <TableRow>
-              <TableCell>
-                <strong>Timestamp</strong>
-              </TableCell>
-              <TableCell>
-                <strong>Event Type</strong>
-              </TableCell>
-              <TableCell>
-                <strong>Source IP</strong>
-              </TableCell>
-              <TableCell>
-                <strong>User</strong>
-              </TableCell>
-              <TableCell>
-                <strong>Status</strong>
-              </TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {paginatedData.map((row) => (
-              <TableRow key={row.id}>
-                <TableCell>{row.timestamp}</TableCell>
-                <TableCell>{row.eventType}</TableCell>
-                <TableCell>{row.sourceIP}</TableCell>
-                <TableCell>{row.user}</TableCell>
-                <TableCell>
-                  <Chip
-                    label={row.status}
-                    color={getStatusColor(row.status)}
-                    sx={{ fontWeight: "bold", borderRadius: "6px" }}
-                  />
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-
-      <Box display="flex" justifyContent="flex-end" mt={2}>
-        <Pagination
-          count={Math.ceil(filteredData.length / rowsPerPage)}
-          page={page}
-          onChange={(_, value) => setPage(value)}
-        />
-      </Box>
-    </Box>
+    <EnhancedDataGrid
+      rows={eventsData}
+      columns={columns}
+      title="Events"
+      loading={loading}
+      searchPlaceholder="Search Events..."
+      pageSize={10}
+      checkboxSelection={true}
+      onRowSelectionModelChange={(selectionModel) => {
+        console.log("Selected events:", selectionModel);
+      }}
+    />
   );
 };
 

@@ -1,163 +1,152 @@
-import {
-  Box,
-  TextField,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Chip,
-  Typography,
-  Paper,
-  Pagination,
-} from "@mui/material";
 import { useEffect, useState } from "react";
+import { Chip, Typography, Box } from "@mui/material";
+import { GridColDef, GridRenderCellParams } from "@mui/x-data-grid";
 import { assetsData } from "../data/assets";
 import Loader from "../components/Loader";
 import { getAssetImpactColor, getAssetTypeIcon } from "../utils";
-import { LOADER_DELAY_TIME, ROWS_PER_PAGE } from "../utils/constants";
+import EnhancedDataGrid from "../components/EnhancedDataGrid";
+import { LOADER_DELAY_TIME } from "../utils/constants";
 
 const Assets = () => {
-  const [search, setSearch] = useState("");
-  const [debouncedSearch, setDebouncedSearch] = useState("");
   const [loading, setLoading] = useState(true);
-  const [page, setPage] = useState(1);
-  const rowsPerPage = ROWS_PER_PAGE;
   const delay = LOADER_DELAY_TIME;
 
   useEffect(() => {
     setTimeout(() => setLoading(false), delay);
   }, [delay]);
 
-  // Debounce logic
-  useEffect(() => {
-    const handler = setTimeout(() => {
-      setDebouncedSearch(search);
-      setPage(1);
-    }, 300);
-    return () => clearTimeout(handler);
-  }, [search]);
+  const columns: GridColDef[] = [
+    {
+      field: "id",
+      headerName: "ID",
+      width: 80,
+      type: "number",
+    },
+    {
+      field: "type",
+      headerName: "Type",
+      width: 80,
+      renderCell: (params: GridRenderCellParams) => (
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          {getAssetTypeIcon(params.value)}
+        </Box>
+      ),
+    },
+    {
+      field: "name",
+      headerName: "Asset Name",
+      width: 200,
+      flex: 1,
+      minWidth: 150,
+    },
+    {
+      field: "tags",
+      headerName: "Tags",
+      width: 150,
+      renderCell: (params: GridRenderCellParams) => (
+        <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+          {params.value.map((tag: string, index: number) => (
+            <Chip
+              key={index}
+              label={tag}
+              size="small"
+              sx={{
+                backgroundColor: "#90a4ae",
+                color: "white",
+                borderRadius: "6px",
+              }}
+            />
+          ))}
+        </Box>
+      ),
+    },
+    {
+      field: "os",
+      headerName: "OS",
+      width: 100,
+    },
+    {
+      field: "osFamily",
+      headerName: "OS Family",
+      width: 100,
+    },
+    {
+      field: "impact",
+      headerName: "Impact",
+      width: 100,
+      renderCell: (params: GridRenderCellParams) => (
+        <Typography
+          sx={{
+            color: getAssetImpactColor(params.value),
+            fontWeight: "bold",
+          }}
+        >
+          {params.value}
+        </Typography>
+      ),
+    },
+    {
+      field: "status",
+      headerName: "Status",
+      width: 100,
+      renderCell: (params: GridRenderCellParams) => (
+        <Typography
+          sx={{
+            color: params.value === "Active" ? "#008080" : "#8B8589",
+            fontWeight: "bold",
+          }}
+        >
+          {params.value}
+        </Typography>
+      ),
+    },
+    {
+      field: "attackSurfaceSecurity",
+      headerName: "Security",
+      width: 120,
+      renderCell: (params: GridRenderCellParams) => (
+        <Typography sx={{ color: "#90a4ae" }}>{params.value}</Typography>
+      ),
+    },
+    {
+      field: "attackSurfaceStatus",
+      headerName: "Surface Status",
+      width: 130,
+      renderCell: (params: GridRenderCellParams) => (
+        <Typography
+          sx={{
+            color: params.value === "Unmonitored" ? "red" : "green",
+            fontWeight: "bold",
+          }}
+        >
+          {params.value}
+        </Typography>
+      ),
+    },
+    {
+      field: "breachImpact",
+      headerName: "Breach Impact",
+      width: 130,
+    },
+  ];
 
-  const filteredData = assetsData.filter((asset) =>
-    asset.name.toLowerCase().includes(debouncedSearch.toLowerCase())
-  );
-
-  const paginatedData = filteredData.slice(
-    (page - 1) * rowsPerPage,
-    page * rowsPerPage
-  );
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
-    <Box>
-      {loading && <Loader />}
-
-      <Typography variant="h6" gutterBottom>
-        Assets
-      </Typography>
-
-      <TextField
-        fullWidth
-        label="Search Assets..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        sx={{ mb: 2 }}
-      />
-
-      <TableContainer component={Paper}>
-        <Table>
-          <TableHead sx={{ backgroundColor: "#f5f5f5" }}>
-            <TableRow>
-              <TableCell>
-                <strong>Type</strong>
-              </TableCell>
-              <TableCell>
-                <strong>Asset Name</strong>
-              </TableCell>
-              <TableCell>
-                <strong>Tags</strong>
-              </TableCell>
-              <TableCell>
-                <strong>OS Family</strong>
-              </TableCell>
-              <TableCell>
-                <strong>Impact</strong>
-              </TableCell>
-              <TableCell>
-                <strong>AttackSurfaceSecurity</strong>
-              </TableCell>
-              <TableCell>
-                <strong>Status</strong>
-              </TableCell>
-              <TableCell>
-                <strong>AttackSurfaceStatus</strong>
-              </TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {paginatedData.map((row) => (
-              <TableRow key={row.id}>
-                <TableCell>{getAssetTypeIcon(row.type)}</TableCell>
-                <TableCell>{row.name}</TableCell>
-                <TableCell>
-                  {row.tags.map((tag, index) => (
-                    <Chip
-                      key={index}
-                      label={tag}
-                      sx={{
-                        mr: 1,
-                        backgroundColor: "#90a4ae",
-                        color: "white",
-                        borderRadius: "6px",
-                      }}
-                    />
-                  ))}
-                </TableCell>
-                <TableCell>{row.os}</TableCell>
-                <TableCell>
-                  <Typography
-                    sx={{
-                      color: getAssetImpactColor(row.impact),
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {row.impact}
-                  </Typography>
-                </TableCell>
-                <TableCell sx={{ color: "#90a4ae" }}>
-                  {row.attackSurfaceSecurity}
-                </TableCell>
-                <TableCell
-                  sx={{
-                    color: row.status === "Active" ? "#008080" : "#8B8589",
-                  }}
-                >
-                  {row.status}
-                </TableCell>
-                <TableCell
-                  sx={{
-                    color:
-                      row.attackSurfaceStatus === "Unmonitored"
-                        ? "red"
-                        : "green",
-                  }}
-                >
-                  {row.attackSurfaceStatus}
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-
-      <Box display="flex" justifyContent="flex-end" mt={2}>
-        <Pagination
-          count={Math.ceil(filteredData.length / rowsPerPage)}
-          page={page}
-          onChange={(_, value) => setPage(value)}
-        />
-      </Box>
-    </Box>
+    <EnhancedDataGrid
+      rows={assetsData}
+      columns={columns}
+      title="Assets"
+      loading={loading}
+      searchPlaceholder="Search Assets..."
+      pageSize={10}
+      checkboxSelection={true}
+      onRowSelectionModelChange={(selectionModel) => {
+        console.log("Selected assets:", selectionModel);
+      }}
+    />
   );
 };
 
