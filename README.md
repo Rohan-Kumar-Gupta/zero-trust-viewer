@@ -13,9 +13,6 @@ A single-page React app built with **TypeScript** and **Material‑UI**, designe
 - **Client-side pagination**  
 - **Styled data tables** with chips, icons, action buttons  
 - **Mock loading state** and spinner  
-- **Responsive layout**:  
-  - Permanent sidebar and fixed header on desktop  
-  - Mobile-friendly drawer with hamburger menu  
 - **Material‑UI theming** and consistent design  
 
 
@@ -115,9 +112,9 @@ src/
 ## ✅ Usage Summary
 |     Page      |       Search Field        |                     Table Columns & Highlights                  |
 |---------------|---------------------------|-----------------------------------------------------------------|
-|    Policies   |  filters on policy name   | Name, Criteria (colored chips), Description, Score, Edit/Delete |
-|    Assets     |  filters on asset name    | Type icon, Name, Tags, OS Family, Impact (color-coded), Status  |
-|    Events     |  filters on event type    | Timestamp, Event Type, Source IP, User, Status (chips)          |
+|    Policies   |  filters on anyThing      | Name, Criteria (colored chips), Description, Score, Edit/Delete |
+|    Assets     |  filters on anyThing      | Type icon, Name, Tags, OS Family, Impact (color-coded), Status  |
+|    Events     |  filters on anyThing      | Timestamp, Event Type, Source IP, User, Status (chips)          |
 
 
 ```
