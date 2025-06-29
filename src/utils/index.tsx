@@ -71,3 +71,48 @@ export const getStatusColor = (status: string) => {
       return "default";
   }
 };
+
+
+
+export const addParamToQuery = (queryParams: string, paramName: string, paramValue: string | number | null | undefined): string => {
+  if (paramValue !== undefined && paramValue !== null && paramValue !== '') queryParams += `&${paramName}=${encodeURIComponent(String(paramValue))}`
+  return queryParams
+}
+
+export const addSingleQueryParam = (paramName: string, paramValue: string | number | null | undefined): string | null => {
+  if (paramName && paramValue !== undefined && paramValue !== null && paramValue !== '') return `${encodeURIComponent(paramName)}=${encodeURIComponent(String(paramValue))}`
+  return null
+}
+
+export const buildQueryParams = (
+  paramsArray: { paramName: string; paramValue: string | number | (string | number | null | undefined)[] | null | undefined }[]
+): string => {
+  const paramCouples = paramsArray
+    .flatMap(({ paramName, paramValue }) => {
+      if (Array.isArray(paramValue)) return paramValue.filter(v => v !== undefined && v !== null && v !== '').map(v => addSingleQueryParam(paramName, v))
+      return addSingleQueryParam(paramName, paramValue)
+    })
+    .filter((x): x is string => Boolean(x))
+  return paramCouples.length ? `?${paramCouples.join('&')}` : ''
+}
+
+export function getNewPage(oldPage: number, oldPageSize: number, newPageSize: number): number {
+  const oldStartIndex = (oldPage - 1) * oldPageSize
+  return Math.floor(oldStartIndex / newPageSize) + 1
+}
+
+export const assignColumnWidths = ({
+  columns,
+  tableWidth = 1300
+}: {
+  columns: { width?: number }[]
+  tableWidth?: number
+}) => {
+  const totalDeclaredWidth = columns.reduce((sum, column) => sum + (column.width || 0), 0)
+  if (totalDeclaredWidth === 0) return columns
+  return columns.map(column => {
+    const widthRatio = (column.width || 0) / totalDeclaredWidth
+    const calculatedWidth = Math.floor(tableWidth * widthRatio)
+    return { ...column, width: calculatedWidth }
+  })
+}
